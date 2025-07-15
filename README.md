@@ -1,6 +1,6 @@
 # README.md
 
-# Python Balance Sheet Downloader for bo.nalog.gov.ru
+# Python Balance Sheet Downloader for bo.nalog.gov.ru for current and 2023 year
 
 
 
