@@ -125,4 +125,4 @@ This script is intended for educational and research purposes only. The user is 
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under Unlicense. See the `LICENSE` file for details.
