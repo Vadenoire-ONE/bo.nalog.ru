@@ -86,7 +86,7 @@ Before you begin, ensure you have the following installed:
     -   A summary `download_report.txt` will be created, giving you a quick overview of successful and failed downloads.
 
 4. **How it works:**
-    - - For each INN in inns.txt:
+    - For each INN in inns.txt:
         - Open `https://bo.nalog.gov.ru/search?query=[INN]`.
         - Wait for `<div class="results-search-table-item">` to load.
         - Find and click on the entry matching the `INN`.
