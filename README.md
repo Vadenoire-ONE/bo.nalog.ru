@@ -41,8 +41,8 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git
-    cd your-repository-name
+    git clone https://github.com/Vadenoire-ONE/bo.nalog.ru.git
+    cd bo.nalog.ru
     ```
     *(Replace `your-username` and `your-repository-name` with your actual GitHub details.)*
 
@@ -85,25 +85,25 @@ Before you begin, ensure you have the following installed:
     -   A log file `balance_sheet_downloader.log` will be created with detailed information about the run.
     -   A summary `download_report.txt` will be created, giving you a quick overview of successful and failed downloads.
 
-IV. **How it works**
-    For each INN in inns.txt:
-        Open https://bo.nalog.gov.ru/search?query=[INN].
-        Wait for <div class="results-search-table-item"> to load.
-        Find and click on the entry matching the INN.
-        On the organization card page, locate and click "Скачать таблицей или текстом".
-        In the popup, click "Выбрать все".
-        Click "Скачать архив" and verify the download.
-        Click the "2023" button, repeat "Выбрать все" and "Скачать архив" for 2023.
-        Verify each download.
-        Log success or errors, then proceed to the next INN.
-    3. Error Handling and Logging
-        Implement checks for:
-            Page load timeouts.
-            Download completion (file presence, size).
-            Captcha or access blocks.
-        Log all actions and errors for auditing.
+4. **How it works**
+    - For each INN in inns.txt:
+        - Open `https://bo.nalog.gov.ru/search?query=[INN]`.
+        - Wait for `<div class="results-search-table-item">` to load.
+        - Find and click on the entry matching the `INN`.
+        - On the organization card page, locate and click `"Скачать таблицей или текстом"`.
+        - In the popup, click `"Выбрать все"`.
+        - Click `"Скачать архив"` and verify the download.
+        - Click the `"2023"` button, repeat `"Выбрать все"` and `"Скачать архив"` for `2023`.
+        - Verify each download.
+        - Log success or errors, then proceed to the next `INN`.
+    - Error Handling and Logging
+        - Implement checks for:
+            - Page load timeouts.
+            - Download completion (file presence, size).
+            - Captcha or access blocks.
+        - Log all actions and errors for auditing.
 
-4. Output
+5. Output
 Downloaded files should be organized in folders by INN and year.
 
 Maintain a log file of all successful and failed downloads.
